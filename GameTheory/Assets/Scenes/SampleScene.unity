@@ -302,8 +302,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 516509ecc498cf84889f4186d88dd009, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1000
-  jumpForce: 500
 --- !u!1 &230794173
 GameObject:
   m_ObjectHideFlags: 0
@@ -322,7 +320,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!54 &230794174
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -386,8 +384,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb51830343aaec4895a060a9eea9e57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1000
-  jumpForce: 500
 --- !u!1 &238683511
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,7 +1175,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &832077603
 Transform:
   m_ObjectHideFlags: 0
@@ -1243,8 +1239,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a8e4cdc1c54e794397921691da46607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1000
-  jumpForce: 500
 --- !u!1001 &927866658
 PrefabInstance:
   m_ObjectHideFlags: 0

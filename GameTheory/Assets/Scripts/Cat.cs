@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class Cat : AnimalController
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    float jumpForceCat = 200;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+
+   public override void Jump() {
+        if (Input.GetButtonDown("Jump")) {
+            rb.AddForce(Vector3.up * jumpForceCat);
+        }
+
     }
 }

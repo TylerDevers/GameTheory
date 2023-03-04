@@ -5,9 +5,9 @@ using UnityEngine;
 public class AnimalController : MonoBehaviour
 {
 
-    Rigidbody rb;
+    protected Rigidbody rb;
     float horizontalInput, forwardInput;
-    public float moveSpeed = 1000f, jumpForce = 500f;
+    protected float moveSpeed = 1000f, jumpForce = 500f;
     Vector3 move;
 
 
@@ -29,7 +29,7 @@ public class AnimalController : MonoBehaviour
         Move();
     }
 
-    public void Jump() {
+    public virtual void Jump() {
         if (Input.GetButtonDown("Jump")) {
             rb.AddForce(Vector3.up * jumpForce);
         }
