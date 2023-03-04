@@ -9,12 +9,4 @@ A project for Learn.unity
 4. Encapsulation
 
 
-### King Oddball like Game
-* Throw projectiles at stationary attackers. 
-* More than one type of projectile
-* More than one type of enemy.
-
-**TODO for MVP** 
-* player and controller
-* enemies and death 
-* win condition
+### Simplify Project Down to Rolling Ball
