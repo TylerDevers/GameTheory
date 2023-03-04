@@ -231,6 +231,7 @@ GameObject:
   - component: {fileID: 131131436}
   - component: {fileID: 131131435}
   - component: {fileID: 131131437}
+  - component: {fileID: 131131438}
   m_Layer: 0
   m_Name: Dog
   m_TagString: Untagged
@@ -287,8 +288,22 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &131131438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131131434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 516509ecc498cf84889f4186d88dd009, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1000
+  jumpForce: 500
 --- !u!1 &230794173
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,13 +315,14 @@ GameObject:
   - component: {fileID: 230794176}
   - component: {fileID: 230794175}
   - component: {fileID: 230794174}
+  - component: {fileID: 230794177}
   m_Layer: 0
   m_Name: Cat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!54 &230794174
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -321,7 +337,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!65 &230794175
 BoxCollider:
@@ -358,6 +374,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &230794177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230794173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeb51830343aaec4895a060a9eea9e57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1000
+  jumpForce: 500
 --- !u!1 &238683511
 GameObject:
   m_ObjectHideFlags: 0
@@ -1142,13 +1172,14 @@ GameObject:
   - component: {fileID: 832077603}
   - component: {fileID: 832077604}
   - component: {fileID: 832077605}
+  - component: {fileID: 832077606}
   m_Layer: 0
   m_Name: Horse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &832077603
 Transform:
   m_ObjectHideFlags: 0
@@ -1198,8 +1229,22 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &832077606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832077602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a8e4cdc1c54e794397921691da46607, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1000
+  jumpForce: 500
 --- !u!1001 &927866658
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1216,8 +1261,12 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1127609694122185023, guid: c6ef7bd034a477d4884fa1200ffe1747, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 70.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127609694122185023, guid: c6ef7bd034a477d4884fa1200ffe1747, type: 3}
       propertyPath: m_LocalScale.z
-      value: 24.541
+      value: 109.6
       objectReference: {fileID: 0}
     - target: {fileID: 1127609694122185023, guid: c6ef7bd034a477d4884fa1200ffe1747, type: 3}
       propertyPath: m_LocalPosition.x

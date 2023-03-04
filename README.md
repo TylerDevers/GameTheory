@@ -9,4 +9,4 @@ A project for Learn.unity
 4. Encapsulation
 
 
-### Simplify Project Down to Rolling Ball
+### Simplify Project Down to animals
