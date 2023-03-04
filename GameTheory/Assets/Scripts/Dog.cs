@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// INHERITENCE
 public class Dog : AnimalController
 {
    float jumpForceDog = 500;

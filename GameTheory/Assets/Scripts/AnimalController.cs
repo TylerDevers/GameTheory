@@ -9,6 +9,8 @@ public class AnimalController : MonoBehaviour
     float horizontalInput, forwardInput;
     float moveSpeed = 1000f; 
     float jumpForce = 500f;
+
+    // ENCAPSULATION
     public float JumpForce 
     {
         get {return jumpForce;}
@@ -35,7 +37,8 @@ public class AnimalController : MonoBehaviour
         Move();
     }
 
-    public virtual void Jump() {
+    // POLYMORPHISM
+    public virtual void Jump() { 
         if (Input.GetButtonDown("Jump")) {
             rb.AddForce(Vector3.up * jumpForce);
         }
@@ -48,6 +51,7 @@ public class AnimalController : MonoBehaviour
         move = new Vector3(horizontalInput * moveSpeed, rb.position.y, forwardInput * moveSpeed);
     }
 
+    // ABSTRACTION
     void Move() {
         rb.AddForce(move * Time.deltaTime);
     }
