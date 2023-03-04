@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Cat : AnimalController
 {
-    float jumpForceCat = 200;
+    float jumpForceCat = 200f;
 
 
    public override void Jump() {

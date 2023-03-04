@@ -7,7 +7,13 @@ public class AnimalController : MonoBehaviour
 
     protected Rigidbody rb;
     float horizontalInput, forwardInput;
-    protected float moveSpeed = 1000f, jumpForce = 500f;
+    float moveSpeed = 1000f; 
+    float jumpForce = 500f;
+    public float JumpForce 
+    {
+        get {return jumpForce;}
+        set {jumpForce = value;}
+    }
     Vector3 move;
 
 
